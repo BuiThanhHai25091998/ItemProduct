@@ -20,7 +20,7 @@
 				while ($row_Product = mysqli_fetch_array($showProduct)){
 					$idProduct = $row_Product['id'];
 			?>
-			<a href="index.php?p=detailsProduct&idProduct=<?php echo $row_TinDau['id']?>">
+			<a href="detailsProduct.php?idProduct=<?php echo $row_Product['id']?>">
 				<h5><?php echo $row_Product['name'] ?></h5>
 				<img src="images/<?php echo $row_Product['image_link'] ?>">
 				<p><?php echo number_format($row_Product['price']).'VND</br>' ?></p>
